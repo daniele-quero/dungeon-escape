@@ -47,7 +47,7 @@ public class PlayerMovement : MonoBehaviour
         return _rb2d.velocity.y;
     }
 
-    private bool IsGrounded()
+    public bool IsGrounded()
     {
         Vector2 origin = (Vector2)transform.position;
 

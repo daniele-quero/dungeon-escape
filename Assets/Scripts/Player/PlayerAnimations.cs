@@ -5,10 +5,12 @@ using UnityEngine;
 public class PlayerAnimations : MonoBehaviour
 {
     private Animator _animator;
+    private Animator _swordAnimator;
 
     void Start()
     {
-        _animator = GetComponentInChildren<Animator>();
+        _animator = GetComponentsInChildren<Animator>()[0];
+        _swordAnimator = GetComponentsInChildren<Animator>()[1];
     }
 
     public void SetSpeedParameter(float s)
@@ -19,5 +21,11 @@ public class PlayerAnimations : MonoBehaviour
     public void SetJumpTrigger()
     {
         _animator.SetTrigger("onJump");
+    }
+
+    public void SetAttackTrigger()
+    {
+        _animator.SetTrigger("onAttack");
+        _swordAnimator.SetTrigger("onAttack");
     }
 }
