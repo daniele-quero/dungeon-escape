@@ -16,11 +16,9 @@ public class PlayerMovement : MonoBehaviour
     private Vector2 _colliderOffset;
     private float _boxCastDistance = 0.6f;
     private SpriteRenderer _model;
-    private float _jumpCoolDown = 1f;
 
     public Vector2 Velocity { get => _velocity; }
 
-    // Start is called before the first frame update
     void Start()
     {
         _rb2d = GetComponent<Rigidbody2D>();
@@ -32,7 +30,6 @@ public class PlayerMovement : MonoBehaviour
         _colliderOffset = _bc2d.offset;
     }
 
-    // Update is called once per frame
     void Update()
     {
         SetColliderOffset();
@@ -42,9 +39,11 @@ public class PlayerMovement : MonoBehaviour
     private void Move()
     {
         float speed = Input.GetKey(KeyCode.LeftShift) && IsGrounded() ? _runSpeed : _walkSpeed;
-        _velocity.x =  Input.GetAxis("Horizontal") * speed;
-        if(IsGrounded())
+        _velocity.x = Input.GetAxis("Horizontal") * speed;
+
+        if (IsGrounded())
             _pa.SetSpeedParameter(Mathf.Abs(_velocity.x));
+
         _velocity.y = Jump();
         _rb2d.velocity = _velocity;
     }
@@ -53,7 +52,7 @@ public class PlayerMovement : MonoBehaviour
     {
         _jumpAxis = Input.GetAxis("Jump");
 
-        if (_jumpAxis>0 && IsGrounded())
+        if (_jumpAxis > 0 && IsGrounded())
         {
             _pa.SetJumpTrigger();
             return Mathf.Sqrt(-2 * _jumpHeight * Physics2D.gravity.y * _jumpAxis);
@@ -68,9 +67,7 @@ public class PlayerMovement : MonoBehaviour
 
         RaycastHit2D hit = Physics2D.BoxCast(GetOrigin(), _boxCastSize, 0, Vector2Int.down, _boxCastDistance, _groundLayer);
         if (hit.collider != null)
-        {
             return true;
-        }
 
         return false;
     }
@@ -90,6 +87,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        Gizmos.DrawWireCube(GetOrigin() + Vector2.down * _boxCastDistance, _boxCastSize);
+        if (_model != null)
+            Gizmos.DrawWireCube(GetOrigin() + Vector2.down * _boxCastDistance, _boxCastSize);
     }
 }
