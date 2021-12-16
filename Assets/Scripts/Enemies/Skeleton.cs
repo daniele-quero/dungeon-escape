@@ -11,6 +11,6 @@ public class Skeleton : Enemy
 
     protected override void Update()
     {
-        Patrol();
+        _patrol.Patrol();
     }
 }

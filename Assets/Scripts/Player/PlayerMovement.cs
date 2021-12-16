@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : Walker, IWalker
 {
     private Rigidbody2D _rb2d;
     private BoxCollider2D _bc2d;
@@ -32,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        SetColliderOffset();
         Move();
     }
 
@@ -46,6 +45,8 @@ public class PlayerMovement : MonoBehaviour
 
         _velocity.y = Jump();
         _rb2d.velocity = _velocity;
+
+        FlipUnflip();
     }
 
     private float Jump()
@@ -74,13 +75,13 @@ public class PlayerMovement : MonoBehaviour
 
     private void SetColliderOffset()
     {
-        _colliderOffset.x = _model.flipX ? 0.08f : -0.08f;
+        _colliderOffset.x = IsFlipped ? 0.08f : -0.08f;
         _bc2d.offset = _colliderOffset;
     }
 
     private Vector2 GetOrigin()
     {
-        return _model.flipX
+        return IsFlipped
             ? (Vector2)transform.position + Vector2.right * 0.1f
             : (Vector2)transform.position + Vector2.left * 0.1f;
     }
@@ -90,4 +91,23 @@ public class PlayerMovement : MonoBehaviour
         if (_model != null)
             Gizmos.DrawWireCube(GetOrigin() + Vector2.down * _boxCastDistance, _boxCastSize);
     }
+
+    #region IWalker implementation
+    public void FlipUnflip()
+    {
+        if (_velocity.x < 0)
+        {
+            IsFlipped = true;
+            Flip(_model.transform);
+            SetColliderOffset();
+        }
+        else if (_velocity.x > 0)
+        {
+            IsFlipped = false;
+            UnFlip(_model.transform);
+            SetColliderOffset();
+        }
+
+    }
+    #endregion
 }

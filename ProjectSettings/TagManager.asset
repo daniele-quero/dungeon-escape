@@ -15,8 +15,8 @@ TagManager:
   - Spikes
   - Sword
   - Player
-  - 
-  - 
+  - Enemy
+  - EnemyHitbox
   - 
   - 
   - 

@@ -2,14 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCombat : MonoBehaviour
+[RequireComponent(typeof(Collider2D))]
+public class PlayerCombat : MonoBehaviour, IDamager
 {
     private PlayerAnimations _pa;
     private PlayerMovement _pm;
-    private bool _isAttacking = false;
+    [SerializeField]private bool _isAttacking = false;
     [SerializeField] private BoxCollider2D _swordHitBox;
-
-    public bool IsAttacking { get => _isAttacking; set => _isAttacking = value; }
 
     void Start()
     {
@@ -26,8 +25,18 @@ public class PlayerCombat : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && _pm.IsGrounded() && !_isAttacking)
         {
-            _swordHitBox.enabled = true;
+            //_swordHitBox.enabled = true;
             _pa.SetAttackTrigger();
         }
     }
+
+    #region IDamager implementation
+    public bool IsAttacking { get => _isAttacking; set => _isAttacking = value; }
+
+    public void DisableHitbox()
+    {
+        _swordHitBox.transform.localRotation = Quaternion.identity;
+        _swordHitBox.enabled = false;
+    }
+    #endregion
 }
