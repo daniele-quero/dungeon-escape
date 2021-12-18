@@ -12,6 +12,11 @@ public class Hitbox : MonoBehaviour
     {
         IDamageable damageable = other.GetComponent<IDamageable>();
         if (damageable != null)
+        {
             damageable.Damage(dmg, _source);
+
+            if (damageable.Health < 1)
+                damageable.Kill();
+        }
     }
 }

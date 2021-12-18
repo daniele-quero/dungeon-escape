@@ -6,4 +6,5 @@ public interface IDamager
 {
     bool IsAttacking { get; set; }
     void DisableHitbox();
+    void Attack();
 }

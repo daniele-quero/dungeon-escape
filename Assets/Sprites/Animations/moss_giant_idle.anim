@@ -108,7 +108,7 @@ AnimationClip:
     - time: 0.71666664
       value: {fileID: 21300086, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
     - time: 0.73333335
-      value: {fileID: 21300088, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
+      value: {fileID: 21300000, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -172,7 +172,7 @@ AnimationClip:
     - {fileID: 21300082, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
     - {fileID: 21300084, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
     - {fileID: 21300086, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
-    - {fileID: 21300088, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
+    - {fileID: 21300000, guid: 4c9fd358712904642a0587d35e7c2e9a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
@@ -197,4 +197,11 @@ AnimationClip:
   m_EulerEditorCurves: []
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
-  m_Events: []
+  m_Events:
+  - time: 0.73333335
+    functionName: OnDeath
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0

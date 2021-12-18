@@ -12,7 +12,6 @@ public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
     #region Properties
     public WaitForSeconds Stagger { get; set; }
     public WaitForSeconds HitCooldown { get; set; }
-    //public bool InCombat { get => _inCombat; set => _inCombat = value; }
     #endregion
 
     void Start()
@@ -20,14 +19,6 @@ public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
         _enemy = GetComponent<Enemy>();
         IsHit = false;
         IsAttacking = false;
-    }
-
-    public void Attack()
-    {
-        if (!_isAttacking)
-        {
-            _enemy.Animator.SetTrigger("onAttack");
-        }
     }
 
     #region IDamageable Implementation
@@ -62,17 +53,41 @@ public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
             foreach (var d in dmg)
             {
                 Health -= d.amount;
-                Debug.Log(name + " hit with " + d.type + "-type attack");
             }
 
             StartCoroutine(TakeHit(source));
         }
     }
+
+    public void Kill()
+    {
+        _enemy.Animator.SetTrigger("onDeath");
+    }
+
+    public void Death()
+    {
+        var components = GetComponentsInChildren<Behaviour>();
+        foreach (var c in components)
+            if (c != this)
+                c.enabled = false;
+
+        GameObject.Destroy(gameObject, 30f);
+    }
     #endregion
+
+    #region IDamager Implementation
+    public void Attack()
+    {
+        if (!_isAttacking)
+        {
+            _enemy.Animator.SetTrigger("onAttack");
+        }
+    }
 
     public bool IsAttacking { get => _isAttacking; set => _isAttacking = value; }
     public void DisableHitbox()
     {
         _enemy.Model.GetComponentInChildren<BoxCollider2D>().enabled = false;
     }
+    #endregion
 }

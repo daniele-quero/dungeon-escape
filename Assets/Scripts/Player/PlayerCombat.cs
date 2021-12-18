@@ -21,21 +21,17 @@ public class PlayerCombat : MonoBehaviour, IDamager
         Attack();
     }
 
-    private void Attack()
+    #region IDamager implementation    
+    public void Attack()
     {
         if (Input.GetMouseButtonDown(0) && _pm.IsGrounded() && !_isAttacking)
-        {
-            //_swordHitBox.enabled = true;
             _pa.SetAttackTrigger();
-        }
     }
 
-    #region IDamager implementation
     public bool IsAttacking { get => _isAttacking; set => _isAttacking = value; }
 
     public void DisableHitbox()
     {
-        _swordHitBox.transform.localRotation = Quaternion.identity;
         _swordHitBox.enabled = false;
     }
     #endregion

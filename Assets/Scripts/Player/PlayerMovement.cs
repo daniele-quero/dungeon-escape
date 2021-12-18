@@ -4,18 +4,23 @@ using UnityEngine;
 
 public class PlayerMovement : Walker, IWalker
 {
+    #region Variables
     private Rigidbody2D _rb2d;
     private BoxCollider2D _bc2d;
-    [SerializeField] private float _walkSpeed, _runSpeed, _jumpHeight;
-    [SerializeField] private Vector2 _velocity = Vector2.zero;
-    [SerializeField] private bool _isGrounded;
-    [SerializeField] float _jumpAxis;
-    private int _groundLayer;
+    private SpriteRenderer _model;
     private PlayerAnimations _pa;
     private Vector2 _boxCastSize;
     private Vector2 _colliderOffset;
     private float _boxCastDistance = 0.6f;
-    private SpriteRenderer _model;
+    private int _groundLayer;
+    #endregion
+
+    #region Serialized Fields
+    [SerializeField] private float _walkSpeed, _runSpeed, _jumpHeight;
+    [SerializeField] private Vector2 _velocity = Vector2.zero;
+    [SerializeField] private bool _isGrounded;
+    [SerializeField] float _jumpAxis;
+    #endregion
 
     public Vector2 Velocity { get => _velocity; }
 
@@ -35,6 +40,7 @@ public class PlayerMovement : Walker, IWalker
         Move();
     }
 
+    #region Movement
     private void Move()
     {
         float speed = Input.GetKey(KeyCode.LeftShift) && IsGrounded() ? _runSpeed : _walkSpeed;
@@ -72,6 +78,7 @@ public class PlayerMovement : Walker, IWalker
 
         return false;
     }
+    #endregion
 
     private void SetColliderOffset()
     {
@@ -79,6 +86,7 @@ public class PlayerMovement : Walker, IWalker
         _bc2d.offset = _colliderOffset;
     }
 
+    #region Gizmo
     private Vector2 GetOrigin()
     {
         return IsFlipped
@@ -91,6 +99,7 @@ public class PlayerMovement : Walker, IWalker
         if (_model != null)
             Gizmos.DrawWireCube(GetOrigin() + Vector2.down * _boxCastDistance, _boxCastSize);
     }
+    #endregion
 
     #region IWalker implementation
     public void FlipUnflip()

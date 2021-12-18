@@ -32,13 +32,14 @@ public class EnemyAggro : Walker, IWalker
             {
                 isAggro = true;
                 _enemy.Patrol.isPatrolling = false;
-                //_enemy.Combat.InCombat = false;
+                _enemy.Combat.IsAttacking = false;
                 MoveToPlayer();
-                _enemy.ToggleIdle(false);                
+                _enemy.ToggleIdle(false);
             }
             else
             {
-                //_enemy.Combat.InCombat = true;
+                FlipUnflip();
+                _enemy.Combat.Attack();
                 isAggro = false;
                 _enemy.Patrol.isPatrolling = false;
                 _enemy.ToggleIdle(true);
@@ -48,18 +49,22 @@ public class EnemyAggro : Walker, IWalker
         {
             isAggro = false;
             _enemy.Patrol.isPatrolling = true;
-            //_enemy.Combat.InCombat = false;
+            _enemy.Combat.IsAttacking = false;
         }
     }
 
     private void MoveToPlayer()
     {
-        FlipUnflip();
-        
-        Vector3 target = _aggro.Player.position;
-        target.y = transform.position.y;
+        if (isAggro)
+        {
+            FlipUnflip();
 
-        transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * _enemy.Speed);
+            Vector3 target = _aggro.Player.position;
+            target.y = transform.position.y;
+
+
+            transform.position = Vector3.MoveTowards(transform.position, target, Time.deltaTime * _enemy.Speed);
+        }
     }
 
     public void FlipRange(bool leftToRight)
