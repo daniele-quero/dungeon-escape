@@ -83,6 +83,7 @@ public class EnemyCombat : Combat, IDamageable, IDamager
     {
         if (!_isAttacking)
         {
+            _enemy.Audio.PlayAttackAudio();
             _enemy.Animator.SetTrigger("onAttack");
         }
     }

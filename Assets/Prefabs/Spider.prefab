@@ -45,7 +45,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.9223572, y: -0.059036046}
+  m_Offset: {x: 0.7312502, y: -0.059036046}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -56,7 +56,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5897758, y: 0.4489972}
+  m_Size: {x: 3.9719896, y: 0.4489972}
   m_EdgeRadius: 0
 --- !u!114 &645109471
 MonoBehaviour:
@@ -114,12 +114,12 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b17e6d71f8e8449eea617605283797c8, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 32fc02cbf40586f4ea1fbe58f2d0568c, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 0.25
   m_Pitch: 1
-  Loop: 1
-  Mute: 1
+  Loop: 0
+  Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
   Priority: 128
@@ -211,7 +211,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 38610b0e6ff5d40c0925a6dd8ea589c1, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -524,6 +524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _spider: {fileID: 2576728149071440985}
+  _shotLife: 1.97
 --- !u!82 &700538920
 AudioSource:
   m_ObjectHideFlags: 0
@@ -777,10 +778,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad5964b0dd243cb43bf04ba2b881765b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackAudio: {fileID: 0}
-  idleAudio: {fileID: 0}
-  hitAudio: {fileID: 0}
-  deathAudio: {fileID: 0}
+  _attackAudio: {fileID: 1968969348}
+  _idleAudio: {fileID: 1968969347}
+  _hitAudio: {fileID: 0}
+  _deathAudio: {fileID: 1968969346}
 --- !u!1001 &2576728147648390698
 PrefabInstance:
   m_ObjectHideFlags: 0

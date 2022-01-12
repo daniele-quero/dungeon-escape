@@ -28,7 +28,7 @@ public class Spider : Enemy
         }
         else
         {
-            _patrol.isPatrolling = shotDone;//todo: shotDone backup
+            _patrol.isPatrolling = shotDone;
             _combat.IsAttacking = false;
         }
     }
