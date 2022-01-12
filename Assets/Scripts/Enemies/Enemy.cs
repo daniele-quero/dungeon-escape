@@ -5,18 +5,20 @@ using UnityEngine;
 [RequireComponent(typeof(EnemyAggro))]
 [RequireComponent(typeof(EnemyPatrol))]
 [RequireComponent(typeof(EnemyCombat))]
+[RequireComponent(typeof(EnemyAudio))]
 public abstract class Enemy : MonoBehaviour
 {
     #region Variables: Stats
-    [SerializeField] protected int _health;
+    //[SerializeField] protected int _health;
     [SerializeField] protected float _speed;
-    [SerializeField] protected int _gems;
+    [SerializeField] protected int _diamonds;
     #endregion
 
     #region Sub-Behaviours References
     protected EnemyPatrol _patrol;
     protected EnemyAggro _aggro;
     protected EnemyCombat _combat;
+    protected EnemyAudio _audio;
     #endregion
 
     #region Variables: Model
@@ -28,12 +30,12 @@ public abstract class Enemy : MonoBehaviour
     #region Properties
     public float Speed { get => _speed; set => _speed = value; }
     public float OriginalSpeed { get; set; }
-    public int Health { get => _health; set => _health = value; }
     public SpriteRenderer Model { get => _model; }
     public Animator Animator { get => _animator; }
     public EnemyPatrol Patrol { get => _patrol; }
     public EnemyAggro Aggro { get => _aggro; }
     public EnemyCombat Combat { get => _combat; }
+    public EnemyAudio Audio { get => _audio; }
     #endregion
 
     #region MonoBehaviour Methods
@@ -46,6 +48,7 @@ public abstract class Enemy : MonoBehaviour
         _patrol = GetComponent<EnemyPatrol>();
         _aggro = GetComponent<EnemyAggro>();
         _combat = GetComponent<EnemyCombat>();
+        _audio = GetComponent<EnemyAudio>();
         OriginalSpeed = Speed;
     }
     #endregion
@@ -53,12 +56,22 @@ public abstract class Enemy : MonoBehaviour
     #region Idle Management
     public void ToggleIdle()
     {
-        _animator.SetBool("isIdle", !(_patrol.isPatrolling || _aggro.isAggro));
+        bool isIdle = !(_patrol.isPatrolling || _aggro.isAggro);
+        Audio.ToggleMuteIdle(isIdle);
+        _animator.SetBool("isIdle", isIdle);
     }
 
     public void ToggleIdle(bool isIdle)
     {
+        Audio.ToggleMuteIdle(isIdle);
         _animator.SetBool("isIdle", isIdle);
     }
+
+    
     #endregion
+
+    public void DropDiamonds()
+    {
+        //todo: drop diamond or diamonds
+    }
 }

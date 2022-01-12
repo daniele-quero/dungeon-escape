@@ -3,41 +3,41 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Enemy))]
-public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
+[RequireComponent(typeof(Collider2D))]
+public class EnemyCombat : Combat, IDamageable, IDamager
 {
     private Enemy _enemy;
     [SerializeField] private bool _inCombat;
     [SerializeField] private bool _isAttacking = false;
 
     #region Properties
-    public WaitForSeconds Stagger { get; set; }
     public WaitForSeconds HitCooldown { get; set; }
     #endregion
 
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         _enemy = GetComponent<Enemy>();
         IsHit = false;
         IsAttacking = false;
     }
 
     #region IDamageable Implementation
-    public int Health { get => _enemy.Health; set => _enemy.Health = value; }
+    public int Health { get => _health; set => _health = value; }
     public bool IsHit { get; set; }
 
     public IEnumerator TakeHit(Transform source)
     {
         _enemy.Speed = 0;
         _enemy.Patrol.isPatrolling = false;
-
+        _enemy.Audio.PlayAttackAudio();
         _enemy.Animator.SetTrigger("onHit");
         IsHit = true;
 
         yield return HitCooldown;
         IsHit = false;
 
-        if (Random.Range(0f, 1f) < 0.7f)
-            yield return Stagger;
+        yield return Stagger;
 
         _enemy.Animator.SetTrigger("onResume");
         _enemy.Speed = _enemy.OriginalSpeed;
@@ -52,7 +52,7 @@ public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
         {
             foreach (var d in dmg)
             {
-                Health -= d.amount;
+                Health -= CombatMathf.NetDamage(d, _defences);
             }
 
             StartCoroutine(TakeHit(source));
@@ -61,7 +61,10 @@ public class EnemyCombat : MonoBehaviour, IDamageable, IDamager
 
     public void Kill()
     {
+        _enemy.Audio.PlayDeathAudio();
         _enemy.Animator.SetTrigger("onDeath");
+        GetComponent<Collider2D>().enabled = false;
+        _enemy.DropDiamonds();
     }
 
     public void Death()

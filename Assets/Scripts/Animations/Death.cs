@@ -8,4 +8,9 @@ public class Death : MonoBehaviour
     {
         GetComponentInParent<IDamageable>().Death();
     }
+
+    public void BeforeDeath()
+    {
+        GetComponentInParent<Collider2D>().enabled = false;
+    }
 }

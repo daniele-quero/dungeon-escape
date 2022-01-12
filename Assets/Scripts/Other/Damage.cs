@@ -11,7 +11,9 @@ public struct Damage
 
 public enum DmgType
 {
-    normal,
-    fire
+    normal, 
+    fire,
+    magic,
+    poison,
 
 }

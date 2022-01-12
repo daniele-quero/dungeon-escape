@@ -102,7 +102,7 @@ public class EnemyAggro : Walker, IWalker
         return Mathf.Abs(transform.position.x - target.position.x);
     }
 
-    private bool PlayerInSight()
+    public bool PlayerInSight()
     {
         return _aggro.Player != null;
     }

@@ -61,11 +61,6 @@ public class EnemyPatrol : Walker, IWalker
 
     private void MoveTo(int id)
     {
-        //if (_enemy.Speed > 0)
-        //{
-        //    _enemy.Model.flipX = LeftToRight();
-        //    _enemy.Aggro.FlipRange(LeftToRight());
-        //}
         FlipUnflip();
         transform.position = Vector3.MoveTowards(transform.position, _waypoints[id].position, Time.deltaTime * _enemy.Speed);
     }

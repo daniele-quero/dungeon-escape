@@ -9,6 +9,7 @@ public class PlayerMovement : Walker, IWalker
     private BoxCollider2D _bc2d;
     private SpriteRenderer _model;
     private PlayerAnimations _pa;
+    private PlayerCombat _pc;
     private Vector2 _boxCastSize;
     private Vector2 _colliderOffset;
     private float _boxCastDistance = 0.6f;
@@ -22,13 +23,14 @@ public class PlayerMovement : Walker, IWalker
     [SerializeField] float _jumpAxis;
     #endregion
 
-    public Vector2 Velocity { get => _velocity; }
+    public Vector2 Velocity { get => _velocity; set => _velocity = value; }
 
     void Start()
     {
         _rb2d = GetComponent<Rigidbody2D>();
         _bc2d = GetComponent<BoxCollider2D>();
         _pa = GetComponent<PlayerAnimations>();
+        _pc = GetComponent<PlayerCombat>();
         _groundLayer = LayerMask.GetMask("Ground");
         _boxCastSize = new Vector2(_bc2d.size.x * 1.2f, _bc2d.size.y);
         _model = GetComponentInChildren<SpriteRenderer>();
@@ -37,7 +39,8 @@ public class PlayerMovement : Walker, IWalker
 
     void Update()
     {
-        Move();
+        if (!_pc.IsHit)
+            Move();
     }
 
     #region Movement
@@ -50,9 +53,18 @@ public class PlayerMovement : Walker, IWalker
             _pa.SetSpeedParameter(Mathf.Abs(_velocity.x));
 
         _velocity.y = Jump();
+        //AdjustVelocity();
         _rb2d.velocity = _velocity;
 
         FlipUnflip();
+        if (IsGrounded() && _velocity.y < -0.5f)
+            _pa.SetLandingTrigger();
+    }
+
+    private void AdjustVelocity()
+    {
+        if (IsGrounded() && _rb2d.velocity.x != 0)
+            _velocity.y = 0;
     }
 
     private float Jump()
@@ -65,6 +77,8 @@ public class PlayerMovement : Walker, IWalker
             return Mathf.Sqrt(-2 * _jumpHeight * Physics2D.gravity.y * _jumpAxis);
         }
 
+        if (IsGrounded() && _rb2d.velocity.x != 0)
+            return 0;
         return _rb2d.velocity.y;
     }
 

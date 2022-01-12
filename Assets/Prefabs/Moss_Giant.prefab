@@ -71,8 +71,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dmg:
-  - amount: 2
+  - amount: 5
     type: 0
+  - amount: 1
+    type: 2
   _source: {fileID: 0}
 --- !u!1 &1626395189
 GameObject:
@@ -241,7 +243,7 @@ Animator:
   m_GameObject: {fileID: 4681606622410295503}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 42637beeb1a018f4a805ec56f9c5edfb, type: 2}
+  m_Controller: {fileID: 22100000, guid: 737ded8df8c307c4e85c7c85d470cfbb, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -308,7 +310,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dcf97d2dc0b6f914c8141be1711d5941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _health: 10
   _speed: 0.85
   _gems: 0
 --- !u!61 &6298113374598319705
