@@ -33,4 +33,16 @@ public class EnemyAudio : MonoBehaviour
             _attackAudio.Play();
     }
 
+    public void StopAttackAudio()
+    {
+        if (_attackAudio != null)
+            _attackAudio.Stop();
+    }
+
+    public void StopHitAudio()
+    {
+        if (_hitAudio != null)
+            _hitAudio.Stop();
+    }
+
 }

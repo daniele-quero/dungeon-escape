@@ -66,11 +66,12 @@ public class PlayerCombat : Combat, IDamager, IDamageable
     {
         _pa.SetHitTrigger();
         IsHit = true;
-
+        _pm.CanMove = false;
         yield return Stagger;
         _pa.ResumeFromHitTrigger();
         IsAttacking = false;
         IsHit = false;
+        _pm.CanMove = true;
     }
     #endregion
 }

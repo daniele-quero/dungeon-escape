@@ -28,6 +28,8 @@ public class AggroRange : MonoBehaviour
     {
         if ("Player" == collision.tag)
             Player = null;
+
+        GetComponentInParent<Enemy>().Animator.SetTrigger("onResume");
     }
     #endregion
 }

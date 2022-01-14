@@ -30,7 +30,9 @@ public class EnemyCombat : Combat, IDamageable, IDamager
     {
         _enemy.Speed = 0;
         _enemy.Patrol.isPatrolling = false;
-        _enemy.Audio.PlayAttackAudio();
+        _enemy.Audio.StopAttackAudio();
+        _enemy.Audio.PlayHitAudio();
+        IsAttacking = false;
         _enemy.Animator.SetTrigger("onHit");
         IsHit = true;
 
@@ -61,6 +63,7 @@ public class EnemyCombat : Combat, IDamageable, IDamager
 
     public void Kill()
     {
+        _enemy.Audio.StopAttackAudio();
         _enemy.Audio.PlayDeathAudio();
         _enemy.Animator.SetTrigger("onDeath");
         GetComponent<Collider2D>().enabled = false;
@@ -85,6 +88,7 @@ public class EnemyCombat : Combat, IDamageable, IDamager
         {
             _enemy.Audio.PlayAttackAudio();
             _enemy.Animator.SetTrigger("onAttack");
+            _isAttacking = true;
         }
     }
 

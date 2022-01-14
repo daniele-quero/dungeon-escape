@@ -14,6 +14,7 @@ public class PlayerMovement : Walker, IWalker
     private Vector2 _colliderOffset;
     private float _boxCastDistance = 0.6f;
     private int _groundLayer;
+    private float _prevVelY = 0f;
     #endregion
 
     #region Serialized Fields
@@ -21,9 +22,11 @@ public class PlayerMovement : Walker, IWalker
     [SerializeField] private Vector2 _velocity = Vector2.zero;
     [SerializeField] private bool _isGrounded;
     [SerializeField] float _jumpAxis;
+    [SerializeField] private bool _canMove;
     #endregion
 
     public Vector2 Velocity { get => _velocity; set => _velocity = value; }
+    public bool CanMove { get => _canMove; set => _canMove = value; }
 
     void Start()
     {
@@ -35,6 +38,7 @@ public class PlayerMovement : Walker, IWalker
         _boxCastSize = new Vector2(_bc2d.size.x * 1.2f, _bc2d.size.y);
         _model = GetComponentInChildren<SpriteRenderer>();
         _colliderOffset = _bc2d.offset;
+        CanMove = true;
     }
 
     void Update()
@@ -46,25 +50,25 @@ public class PlayerMovement : Walker, IWalker
     #region Movement
     private void Move()
     {
-        float speed = Input.GetKey(KeyCode.LeftShift) && IsGrounded() ? _runSpeed : _walkSpeed;
-        _velocity.x = Input.GetAxis("Horizontal") * speed;
+        if (CanMove)
+        {
 
-        if (IsGrounded())
-            _pa.SetSpeedParameter(Mathf.Abs(_velocity.x));
+            float speed = Input.GetKey(KeyCode.LeftShift) && IsGrounded() ? _runSpeed : _walkSpeed;
+            _velocity.x = Input.GetAxis("Horizontal") * speed;
 
-        _velocity.y = Jump();
-        //AdjustVelocity();
-        _rb2d.velocity = _velocity;
+            if (IsGrounded())
+                _pa.SetSpeedParameter(Mathf.Abs(_velocity.x));
 
-        FlipUnflip();
-        if (IsGrounded() && _velocity.y < -0.5f)
+            _velocity.y = Jump();
+            _rb2d.velocity = _velocity;
+
+            FlipUnflip();
+        }
+
+        if (ApproachingGround())
             _pa.SetLandingTrigger();
-    }
 
-    private void AdjustVelocity()
-    {
-        if (IsGrounded() && _rb2d.velocity.x != 0)
-            _velocity.y = 0;
+        _prevVelY = _velocity.y;
     }
 
     private float Jump()
@@ -80,6 +84,11 @@ public class PlayerMovement : Walker, IWalker
         if (IsGrounded() && _rb2d.velocity.x != 0)
             return 0;
         return _rb2d.velocity.y;
+    }
+
+    private bool ApproachingGround()
+    {
+        return IsGrounded() && _velocity.y - _prevVelY < -1e-5;
     }
 
     public bool IsGrounded()

@@ -56,18 +56,18 @@ public abstract class Enemy : MonoBehaviour
     #region Idle Management
     public void ToggleIdle()
     {
-        bool isIdle = !(_patrol.isPatrolling || _aggro.isAggro);
+        bool isIdle = !(Patrol.isPatrolling || Aggro.isAggro );
         Audio.ToggleMuteIdle(isIdle);
-        _animator.SetBool("isIdle", isIdle);
+        Animator.SetBool("isIdle", isIdle);
     }
 
     public void ToggleIdle(bool isIdle)
     {
         Audio.ToggleMuteIdle(isIdle);
-        _animator.SetBool("isIdle", isIdle);
+        Animator.SetBool("isIdle", isIdle);
     }
 
-    
+
     #endregion
 
     public void DropDiamonds()

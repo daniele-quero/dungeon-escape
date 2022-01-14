@@ -28,7 +28,7 @@ public class EnemyAggro : Walker, IWalker
     {
         if (PlayerInSight())
         {
-            if (XDistance(_aggro.Player) > 1f) //TBD value
+            if (XDistance(_aggro.Player) > 1f) //todo: value
             {
                 isAggro = true;
                 _enemy.Patrol.isPatrolling = false;
@@ -42,14 +42,15 @@ public class EnemyAggro : Walker, IWalker
                 _enemy.Combat.Attack();
                 isAggro = false;
                 _enemy.Patrol.isPatrolling = false;
-                _enemy.ToggleIdle(true);
+                //_enemy.ToggleIdle(false);
             }
         }
         else
         {
             isAggro = false;
             _enemy.Patrol.isPatrolling = true;
-            _enemy.Combat.IsAttacking = false;
+            //_enemy.ToggleIdle(false);
+            //_enemy.Combat.IsAttacking = false;
         }
     }
 

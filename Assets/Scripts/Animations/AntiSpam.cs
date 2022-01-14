@@ -9,7 +9,6 @@ public class AntiSpam : MonoBehaviour
         IDamager dmg;
         if (transform.parent != null && transform.parent.TryGetComponent<IDamager>(out dmg))
             dmg.IsAttacking = false;
-
     }
 
     public void StartAttack()

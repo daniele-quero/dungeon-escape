@@ -9,4 +9,9 @@ public class ParameterSetReset : MonoBehaviour
     {
         _animator.ResetTrigger(s);
     }
+
+    public void SetTrigger(string s)
+    {
+        _animator.SetTrigger(s);
+    }
 }

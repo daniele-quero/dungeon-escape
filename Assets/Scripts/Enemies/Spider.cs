@@ -26,10 +26,11 @@ public class Spider : Enemy
             if (!_combat.IsAttacking)
                 _animator.SetTrigger("onAttack");
         }
-        else
+        else if(shotDone)
         {
-            _patrol.isPatrolling = shotDone;
+            _patrol.isPatrolling = true;
             _combat.IsAttacking = false;
+            _animator.ResetTrigger("onAttack");
         }
     }
 }

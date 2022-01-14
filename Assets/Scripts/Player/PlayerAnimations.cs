@@ -28,6 +28,11 @@ public class PlayerAnimations : MonoBehaviour
         _animator.SetTrigger("onLanding");
     }
 
+    public void ResetLandingTrigger()
+    {
+        _animator.ResetTrigger("onLanding");
+    }
+
     public void SetJumpTrigger()
     {
         _jumpAudio.Play();
@@ -36,6 +41,7 @@ public class PlayerAnimations : MonoBehaviour
 
     public void SetAttackTrigger()
     {
+        _attack1Audio.Play();
         _animator.SetTrigger("onAttack");
         _swordAnimator.SetTrigger("onAttack");
     }
