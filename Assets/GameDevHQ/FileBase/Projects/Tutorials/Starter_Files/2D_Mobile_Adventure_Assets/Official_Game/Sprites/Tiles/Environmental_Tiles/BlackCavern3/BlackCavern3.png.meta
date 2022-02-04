@@ -180,7 +180,7 @@ TextureImporter:
       213: 21300116
     second: BlackCavern3_58
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,6 +200,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,11 +211,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -231,9 +233,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1547,6 +1553,66 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      BlackCavern3_24: 21300048
+      BlackCavern3_46: 21300092
+      BlackCavern3_10: 21300020
+      BlackCavern3_28: 21300056
+      BlackCavern3_23: 21300046
+      BlackCavern3_14: 21300028
+      BlackCavern3_20: 21300040
+      BlackCavern3_22: 21300044
+      BlackCavern3_30: 21300060
+      BlackCavern3_27: 21300054
+      BlackCavern3_2: 21300004
+      BlackCavern3_7: 21300014
+      BlackCavern3_15: 21300030
+      BlackCavern3_48: 21300096
+      BlackCavern3_49: 21300098
+      BlackCavern3_31: 21300062
+      BlackCavern3_8: 21300016
+      BlackCavern3_53: 21300106
+      BlackCavern3_4: 21300008
+      BlackCavern3_41: 21300082
+      BlackCavern3_52: 21300104
+      BlackCavern3_19: 21300038
+      BlackCavern3_38: 21300076
+      BlackCavern3_45: 21300090
+      BlackCavern3_1: 21300002
+      BlackCavern3_44: 21300088
+      BlackCavern3_40: 21300080
+      BlackCavern3_17: 21300034
+      BlackCavern3_57: 21300114
+      BlackCavern3_12: 21300024
+      BlackCavern3_16: 21300032
+      BlackCavern3_42: 21300084
+      BlackCavern3_5: 21300010
+      BlackCavern3_3: 21300006
+      BlackCavern3_51: 21300102
+      BlackCavern3_25: 21300050
+      BlackCavern3_56: 21300112
+      BlackCavern3_37: 21300074
+      BlackCavern3_54: 21300108
+      BlackCavern3_55: 21300110
+      BlackCavern3_13: 21300026
+      BlackCavern3_26: 21300052
+      BlackCavern3_11: 21300022
+      BlackCavern3_39: 21300078
+      BlackCavern3_6: 21300012
+      BlackCavern3_18: 21300036
+      BlackCavern3_33: 21300066
+      BlackCavern3_58: 21300116
+      BlackCavern3_32: 21300064
+      BlackCavern3_47: 21300094
+      BlackCavern3_21: 21300042
+      BlackCavern3_29: 21300058
+      BlackCavern3_0: 21300000
+      BlackCavern3_36: 21300072
+      BlackCavern3_50: 21300100
+      BlackCavern3_9: 21300018
+      BlackCavern3_35: 21300070
+      BlackCavern3_43: 21300086
+      BlackCavern3_34: 21300068
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

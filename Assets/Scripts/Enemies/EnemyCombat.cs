@@ -63,11 +63,11 @@ public class EnemyCombat : Combat, IDamageable, IDamager
 
     public void Kill()
     {
+        _enemy.DropDiamonds();
         _enemy.Audio.StopAttackAudio();
         _enemy.Audio.PlayDeathAudio();
         _enemy.Animator.SetTrigger("onDeath");
         GetComponent<Collider2D>().enabled = false;
-        _enemy.DropDiamonds();
     }
 
     public void Death()

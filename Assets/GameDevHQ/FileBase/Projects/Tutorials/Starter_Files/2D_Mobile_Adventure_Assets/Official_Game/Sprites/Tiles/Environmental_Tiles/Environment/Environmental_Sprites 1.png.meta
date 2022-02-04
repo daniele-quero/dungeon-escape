@@ -348,6 +348,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -2266,6 +2267,93 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Environmental_Sprites 1_12: 5322581957209547180
+      Environmental_Sprites 1_83: 4065291208706960690
+      Environmental_Sprites 1_58: 240978411053378523
+      Environmental_Sprites 1_2: -8745619563486710676
+      Environmental_Sprites 1_31: 8299676385168083045
+      Environmental_Sprites 1_64: 6601081600929100838
+      Environmental_Sprites 1_35: -4275156224054547074
+      Environmental_Sprites 1_84: -5349294567681613626
+      Environmental_Sprites 1_13: -901797190883082446
+      Environmental_Sprites 1_71: 885534171453387294
+      Environmental_Sprites 1_16: -8490529034891604505
+      Environmental_Sprites 1_20: -2113354110157120400
+      Environmental_Sprites 1_49: -3574457123987788072
+      Environmental_Sprites 1_54: 6814504142049749156
+      Environmental_Sprites 1_39: -4605974046086697123
+      Environmental_Sprites 1_19: -5778296194809478947
+      Environmental_Sprites 1_52: -871153271729899861
+      Environmental_Sprites 1_48: 683086307885185329
+      Environmental_Sprites 1_22: -5176437913589862268
+      Environmental_Sprites 1_57: -2538745092068887081
+      Environmental_Sprites 1_32: 1361878049693257504
+      Environmental_Sprites 1_29: 5985802607557415039
+      Environmental_Sprites 1_80: 3666965485379139568
+      Environmental_Sprites 1_62: 318713594125657090
+      Environmental_Sprites 1_51: 2780819731334321792
+      Environmental_Sprites 1_73: -3849548801834592338
+      Environmental_Sprites 1_68: 7305439126141603126
+      Environmental_Sprites 1_26: 8502385524035760234
+      Environmental_Sprites 1_27: -1537640664420890568
+      Environmental_Sprites 1_53: 5967171326822701844
+      Environmental_Sprites 1_85: -8814914139593902331
+      Environmental_Sprites 1_11: 802714202051575269
+      Environmental_Sprites 1_33: -4397297714140661715
+      Environmental_Sprites 1_56: -5356145823229310938
+      Environmental_Sprites 1_61: 1006971371379573782
+      Environmental_Sprites 1_23: -7039014964806545185
+      Environmental_Sprites 1_76: -172965562990669574
+      Environmental_Sprites 1_63: 4580319283636874033
+      Environmental_Sprites 1_60: 918756682117207663
+      Environmental_Sprites 1_41: -5105528014303770620
+      Environmental_Sprites 1_1: -4632481266455187185
+      Environmental_Sprites 1_77: -2097081206851248029
+      Environmental_Sprites 1_40: 1772361496204776142
+      Environmental_Sprites 1_70: -5795853249364639583
+      Environmental_Sprites 1_30: -2323194725875317935
+      Environmental_Sprites 1_14: 326114624246045300
+      Environmental_Sprites 1_50: 8535794150586644936
+      Environmental_Sprites 1_18: 8589565724720331502
+      Environmental_Sprites 1_66: 2161153069259611120
+      Environmental_Sprites 1_78: -1953710143097980688
+      Environmental_Sprites 1_37: -8097624099908395326
+      Environmental_Sprites 1_74: 6386405117752543699
+      Environmental_Sprites 1_0: -8076646004777646364
+      Environmental_Sprites 1_81: -891930327375239138
+      Environmental_Sprites 1_3: -1566332790315343911
+      Environmental_Sprites 1_10: 7247743664642413322
+      Environmental_Sprites 1_67: -5943258538842230887
+      Environmental_Sprites 1_38: -340016111290109438
+      Environmental_Sprites 1_28: 8579649885960658097
+      Environmental_Sprites 1_72: -7770386790839490227
+      Environmental_Sprites 1_8: 6553997651940792126
+      Environmental_Sprites 1_25: 3562378350429974997
+      Environmental_Sprites 1_34: 1171216030291344973
+      Environmental_Sprites 1_45: -3455937427210229910
+      Environmental_Sprites 1_55: 3220758571805813532
+      Environmental_Sprites 1_7: -8524548297312374612
+      Environmental_Sprites 1_42: -7165528522566085449
+      Environmental_Sprites 1_44: -8096652903894908245
+      Environmental_Sprites 1_69: 797142657583881207
+      Environmental_Sprites 1_59: 5285367647026522196
+      Environmental_Sprites 1_43: 6100371728847416520
+      Environmental_Sprites 1_47: 7147162632214559508
+      Environmental_Sprites 1_4: 6180542915291829209
+      Environmental_Sprites 1_82: -6627974725347173778
+      Environmental_Sprites 1_5: -5638129869604763826
+      Environmental_Sprites 1_65: 5330189908706755828
+      Environmental_Sprites 1_6: 7272605321886249819
+      Environmental_Sprites 1_9: -1891158693364591066
+      Environmental_Sprites 1_24: -2007225626862047802
+      Environmental_Sprites 1_46: -5419675974255518316
+      Environmental_Sprites 1_17: 9208913304811578349
+      Environmental_Sprites 1_79: -9097326617118515759
+      Environmental_Sprites 1_21: 8781438087343041122
+      Environmental_Sprites 1_36: 5458680098928452140
+      Environmental_Sprites 1_75: 4554578421709644890
+      Environmental_Sprites 1_15: 1861556405916636063
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

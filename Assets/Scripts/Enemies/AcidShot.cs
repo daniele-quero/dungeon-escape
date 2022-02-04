@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
 public class AcidShot : MonoBehaviour
 {
@@ -13,6 +14,7 @@ public class AcidShot : MonoBehaviour
     private WaitForSeconds _step;
     private Collider2D _collider;
     private Animator _animator;
+    private Light2D _light;
 
     public bool Fired { get; set; }
 
@@ -24,7 +26,9 @@ public class AcidShot : MonoBehaviour
         _collider = GetComponent<Collider2D>();
         _animator = GetComponent<Animator>();
         _audio = GetComponent<AudioSource>();
+        _light = GetComponentInChildren<Light2D>();
 
+        _light.intensity = 0f;
         _model.enabled = false;
         _collider.enabled = false;
         _animator.enabled = false;
@@ -35,7 +39,8 @@ public class AcidShot : MonoBehaviour
         SetDirection();
         transform.SetParent(null);
         StartCoroutine(AcidFade(_lifetime));
-       
+
+        _light.intensity = 0.75f;
         _collider.enabled = true;
         _model.enabled = true;
         _animator.enabled = false;
@@ -66,10 +71,12 @@ public class AcidShot : MonoBehaviour
             _collider.enabled = false;
             Fired = false;
             Color color = _model.color;
+            float intensity = _light.intensity;
             for (float a = 1; a >= 0; a -= 0.02f)
             {
                 Color newColor = new Color(color.r, color.g, color.b, a);
                 _model.color = newColor;
+                _light.intensity -= intensity * 0.02f;
                 yield return _step;
             }
 
@@ -83,6 +90,7 @@ public class AcidShot : MonoBehaviour
         transform.localPosition = Vector3.zero;
         _collider.enabled = false;
         Fired = false;
+        _light.intensity = 0f;
         _model.color = Color.white;
         _model.enabled = false;
     }

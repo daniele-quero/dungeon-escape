@@ -96,7 +96,7 @@ TextureImporter:
       213: 21300060
     second: Skeleton_Walk_30
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,6 +116,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -124,9 +126,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -147,9 +149,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -863,6 +869,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Skeleton_Walk_4: 21300008
+      Skeleton_Walk_13: 21300026
+      Skeleton_Walk_19: 21300038
+      Skeleton_Walk_8: 21300016
+      Skeleton_Walk_10: 21300020
+      Skeleton_Walk_29: 21300058
+      Skeleton_Walk_3: 21300006
+      Skeleton_Walk_15: 21300030
+      Skeleton_Walk_12: 21300024
+      Skeleton_Walk_21: 21300042
+      Skeleton_Walk_9: 21300018
+      Skeleton_Walk_7: 21300014
+      Skeleton_Walk_1: 21300002
+      Skeleton_Walk_20: 21300040
+      Skeleton_Walk_5: 21300010
+      Skeleton_Walk_14: 21300028
+      Skeleton_Walk_28: 21300056
+      Skeleton_Walk_24: 21300048
+      Skeleton_Walk_11: 21300022
+      Skeleton_Walk_25: 21300050
+      Skeleton_Walk_17: 21300034
+      Skeleton_Walk_18: 21300036
+      Skeleton_Walk_16: 21300032
+      Skeleton_Walk_22: 21300044
+      Skeleton_Walk_0: 21300000
+      Skeleton_Walk_27: 21300054
+      Skeleton_Walk_30: 21300060
+      Skeleton_Walk_2: 21300004
+      Skeleton_Walk_6: 21300012
+      Skeleton_Walk_23: 21300046
+      Skeleton_Walk_26: 21300052
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -90,6 +90,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -358,6 +359,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Sword_Three_Particle_4: 21300008
+      Sword_Three_Particle_5: 21300010
+      Sword_Three_Particle_2: 21300004
+      Sword_Three_Particle_6: 21300012
+      Sword_Three_Particle_7: 21300014
+      Sword_Three_Particle_1: 21300002
+      Sword_Three_Particle_3: 21300006
+      Sword_Three_Particle_0: 21300000
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

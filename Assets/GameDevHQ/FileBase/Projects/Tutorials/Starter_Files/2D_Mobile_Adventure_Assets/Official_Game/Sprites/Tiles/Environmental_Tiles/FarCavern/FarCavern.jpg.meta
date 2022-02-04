@@ -264,6 +264,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -382,7 +383,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 75dabfd7bbbdf6d30800000000000000
-      internalID: 4426998557047500119
+      internalID: 21300000
       vertices: []
       indices: 
       edges: []
@@ -403,7 +404,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c7a124a6922762680800000000000000
-      internalID: -8780204901310260612
+      internalID: 21300002
       vertices: []
       indices: 
       edges: []
@@ -424,7 +425,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 38ac2cbd56c450ca0800000000000000
-      internalID: -6051346523940009341
+      internalID: 21300004
       vertices: []
       indices: 
       edges: []
@@ -445,7 +446,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e78362ce385a3f380800000000000000
-      internalID: -8938618849379075970
+      internalID: 21300006
       vertices: []
       indices: 
       edges: []
@@ -466,7 +467,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: e61a6c4c62e423ec0800000000000000
-      internalID: -3588720024643788434
+      internalID: 21300008
       vertices: []
       indices: 
       edges: []
@@ -487,7 +488,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: afe8b15b134288270800000000000000
-      internalID: 8252886113066913530
+      internalID: 21300010
       vertices: []
       indices: 
       edges: []
@@ -508,7 +509,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 1b233aac89396a940800000000000000
-      internalID: 5307091495346713265
+      internalID: 21300012
       vertices: []
       indices: 
       edges: []
@@ -529,7 +530,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 54cbfe4de9a4e6cd0800000000000000
-      internalID: -2563029091889464251
+      internalID: 21300014
       vertices: []
       indices: 
       edges: []
@@ -550,7 +551,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 98066aa0712ccc6d0800000000000000
-      internalID: -2968784650125287287
+      internalID: 21300016
       vertices: []
       indices: 
       edges: []
@@ -571,7 +572,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 9c0c1d6aaa99106e0800000000000000
-      internalID: -1873047011787161399
+      internalID: 21300018
       vertices: []
       indices: 
       edges: []
@@ -592,7 +593,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: f2eaa98fa30601120800000000000000
-      internalID: 2382510009274248751
+      internalID: 21300020
       vertices: []
       indices: 
       edges: []
@@ -613,7 +614,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 8f8c11642bc84e9e0800000000000000
-      internalID: -1592993670874674952
+      internalID: 21300022
       vertices: []
       indices: 
       edges: []
@@ -634,7 +635,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 3c32c265199ec2240800000000000000
-      internalID: 4768442915903775683
+      internalID: 21300024
       vertices: []
       indices: 
       edges: []
@@ -655,7 +656,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: 13bbb0c26e02e1290800000000000000
-      internalID: -7917854921917220047
+      internalID: 21300026
       vertices: []
       indices: 
       edges: []
@@ -676,7 +677,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: d12228f277a2c3df0800000000000000
-      internalID: -199237592124612067
+      internalID: 21300028
       vertices: []
       indices: 
       edges: []
@@ -697,7 +698,7 @@ TextureImporter:
       tessellationDetail: 0
       bones: []
       spriteID: c754b14fc8ad3b1a0800000000000000
-      internalID: -6794847113846241924
+      internalID: 21300030
       vertices: []
       indices: 
       edges: []
@@ -1720,6 +1721,71 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      FarCavern_2: 21300004
+      FarCavern_11: 21300022
+      FarCavern_15: 21300030
+      FarCavern_39: -6459919771719164825
+      FarCavern_16: 4739741468975635644
+      FarCavern_30: -6160368801731317896
+      FarCavern_49: 7861256552756404138
+      FarCavern_1: 21300002
+      FarCavern_33: -8572102610022870488
+      FarCavern_18: -6890491104300179745
+      FarCavern_53: 9044541527237118150
+      FarCavern_35: 3459325174515699428
+      FarCavern_40: -4005147398847044298
+      FarCavern_46: 8819149032380849255
+      FarCavern_54: 6103137199753721058
+      FarCavern_60: 7697991691931605965
+      FarCavern_56: -1174760329522902043
+      FarCavern_19: -1022707804482388082
+      FarCavern_23: -4322659546720145271
+      FarCavern_7: 21300014
+      FarCavern_21: -8368231623074089399
+      FarCavern_34: 3390129373783894533
+      FarCavern_47: 601394385353213226
+      FarCavern_3: 21300006
+      FarCavern_37: -3016925084753363108
+      FarCavern_0: 21300000
+      FarCavern_59: -7186911107817710735
+      FarCavern_17: 6638603085078393745
+      FarCavern_57: -6945881181032202015
+      FarCavern_52: 7927294761900785257
+      FarCavern_4: 21300008
+      FarCavern_6: 21300012
+      FarCavern_43: -8566675192892622829
+      FarCavern_58: -5657321872571313297
+      FarCavern_27: -6070013150874058903
+      FarCavern_55: -4648552010381645420
+      FarCavern_12: 21300024
+      FarCavern_36: 4022252678156541951
+      FarCavern_42: 5577307749446784294
+      FarCavern_25: -7994700858338726844
+      FarCavern_62: -2524884435362721619
+      FarCavern_28: 8526047372195563949
+      FarCavern_48: 4197281591427163524
+      FarCavern_61: 4565735710931617610
+      FarCavern_8: 21300016
+      FarCavern_13: 21300026
+      FarCavern_44: 7106606376476193526
+      FarCavern_32: 2417426958431908392
+      FarCavern_26: -4174274329338274034
+      FarCavern_29: 774698049682447035
+      FarCavern_50: 7720169412642846878
+      FarCavern_38: -7904189839267767424
+      FarCavern_20: -7944448473610405371
+      FarCavern_10: 21300020
+      FarCavern_31: -7140017305268462589
+      FarCavern_45: -4114645970490860838
+      FarCavern_9: 21300018
+      FarCavern_63: 7601791595072618238
+      FarCavern_24: 717149233649401717
+      FarCavern_5: 21300010
+      FarCavern_22: 6480478833688632947
+      FarCavern_14: 21300028
+      FarCavern_41: -4393282518776483984
+      FarCavern_51: -866044861455977077
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

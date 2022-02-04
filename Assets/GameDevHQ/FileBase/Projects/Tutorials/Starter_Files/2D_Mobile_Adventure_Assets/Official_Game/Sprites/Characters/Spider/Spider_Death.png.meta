@@ -96,7 +96,7 @@ TextureImporter:
       213: 21300060
     second: Spider_Death_30
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -116,6 +116,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -124,9 +126,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -147,9 +149,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -863,6 +869,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Spider_Death_11: 21300022
+      Spider_Death_10: 21300020
+      Spider_Death_29: 21300058
+      Spider_Death_18: 21300036
+      Spider_Death_6: 21300012
+      Spider_Death_5: 21300010
+      Spider_Death_25: 21300050
+      Spider_Death_23: 21300046
+      Spider_Death_27: 21300054
+      Spider_Death_4: 21300008
+      Spider_Death_2: 21300004
+      Spider_Death_15: 21300030
+      Spider_Death_9: 21300018
+      Spider_Death_16: 21300032
+      Spider_Death_0: 21300000
+      Spider_Death_17: 21300034
+      Spider_Death_21: 21300042
+      Spider_Death_26: 21300052
+      Spider_Death_8: 21300016
+      Spider_Death_12: 21300024
+      Spider_Death_28: 21300056
+      Spider_Death_7: 21300014
+      Spider_Death_14: 21300028
+      Spider_Death_20: 21300040
+      Spider_Death_3: 21300006
+      Spider_Death_1: 21300002
+      Spider_Death_22: 21300044
+      Spider_Death_30: 21300060
+      Spider_Death_13: 21300026
+      Spider_Death_24: 21300048
+      Spider_Death_19: 21300038
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

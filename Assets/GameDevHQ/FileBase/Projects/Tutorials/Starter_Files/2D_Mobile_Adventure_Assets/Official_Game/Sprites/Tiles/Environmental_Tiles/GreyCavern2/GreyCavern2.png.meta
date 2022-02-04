@@ -180,7 +180,7 @@ TextureImporter:
       213: 21300116
     second: GreyCavern2_58
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,6 +200,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -209,11 +211,11 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
-    wrapW: -1
+    wrapW: 0
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
@@ -231,9 +233,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1547,6 +1553,66 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      GreyCavern2_23: 21300046
+      GreyCavern2_26: 21300052
+      GreyCavern2_31: 21300062
+      GreyCavern2_0: 21300000
+      GreyCavern2_16: 21300032
+      GreyCavern2_24: 21300048
+      GreyCavern2_39: 21300078
+      GreyCavern2_28: 21300056
+      GreyCavern2_13: 21300026
+      GreyCavern2_35: 21300070
+      GreyCavern2_30: 21300060
+      GreyCavern2_34: 21300068
+      GreyCavern2_36: 21300072
+      GreyCavern2_52: 21300104
+      GreyCavern2_38: 21300076
+      GreyCavern2_53: 21300106
+      GreyCavern2_14: 21300028
+      GreyCavern2_54: 21300108
+      GreyCavern2_44: 21300088
+      GreyCavern2_11: 21300022
+      GreyCavern2_19: 21300038
+      GreyCavern2_4: 21300008
+      GreyCavern2_37: 21300074
+      GreyCavern2_45: 21300090
+      GreyCavern2_58: 21300116
+      GreyCavern2_42: 21300084
+      GreyCavern2_7: 21300014
+      GreyCavern2_10: 21300020
+      GreyCavern2_48: 21300096
+      GreyCavern2_9: 21300018
+      GreyCavern2_5: 21300010
+      GreyCavern2_25: 21300050
+      GreyCavern2_22: 21300044
+      GreyCavern2_57: 21300114
+      GreyCavern2_29: 21300058
+      GreyCavern2_41: 21300082
+      GreyCavern2_6: 21300012
+      GreyCavern2_43: 21300086
+      GreyCavern2_20: 21300040
+      GreyCavern2_27: 21300054
+      GreyCavern2_17: 21300034
+      GreyCavern2_51: 21300102
+      GreyCavern2_46: 21300092
+      GreyCavern2_40: 21300080
+      GreyCavern2_55: 21300110
+      GreyCavern2_12: 21300024
+      GreyCavern2_15: 21300030
+      GreyCavern2_1: 21300002
+      GreyCavern2_21: 21300042
+      GreyCavern2_8: 21300016
+      GreyCavern2_50: 21300100
+      GreyCavern2_47: 21300094
+      GreyCavern2_3: 21300006
+      GreyCavern2_56: 21300112
+      GreyCavern2_18: 21300036
+      GreyCavern2_2: 21300004
+      GreyCavern2_33: 21300066
+      GreyCavern2_49: 21300098
+      GreyCavern2_32: 21300064
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

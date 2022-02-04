@@ -93,7 +93,7 @@ TextureImporter:
       213: 21300058
     second: Diamond_29
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -113,6 +113,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -121,9 +123,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -144,9 +146,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -839,6 +845,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Diamond_8: 21300016
+      Diamond_14: 21300028
+      Diamond_16: 21300032
+      Diamond_23: 21300046
+      Diamond_2: 21300004
+      Diamond_5: 21300010
+      Diamond_11: 21300022
+      Diamond_21: 21300042
+      Diamond_28: 21300056
+      Diamond_24: 21300048
+      Diamond_25: 21300050
+      Diamond_29: 21300058
+      Diamond_10: 21300020
+      Diamond_0: 21300000
+      Diamond_15: 21300030
+      Diamond_12: 21300024
+      Diamond_20: 21300040
+      Diamond_18: 21300036
+      Diamond_1: 21300002
+      Diamond_13: 21300026
+      Diamond_9: 21300018
+      Diamond_19: 21300038
+      Diamond_6: 21300012
+      Diamond_26: 21300052
+      Diamond_17: 21300034
+      Diamond_27: 21300054
+      Diamond_7: 21300014
+      Diamond_4: 21300008
+      Diamond_22: 21300044
+      Diamond_3: 21300006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

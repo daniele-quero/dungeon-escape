@@ -363,7 +363,7 @@ TextureImporter:
       213: 21300238
     second: Waterfall_Center_119
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -383,6 +383,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -391,9 +393,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -414,9 +416,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1109,6 +1115,37 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Waterfall_Center_29: 21300058
+      Waterfall_Center_28: 21300056
+      Waterfall_Center_2: 21300004
+      Waterfall_Center_0: 21300000
+      Waterfall_Center_15: 21300030
+      Waterfall_Center_1: 21300002
+      Waterfall_Center_13: 21300026
+      Waterfall_Center_24: 21300048
+      Waterfall_Center_18: 21300036
+      Waterfall_Center_11: 21300022
+      Waterfall_Center_8: 21300016
+      Waterfall_Center_16: 21300032
+      Waterfall_Center_20: 21300040
+      Waterfall_Center_6: 21300012
+      Waterfall_Center_22: 21300044
+      Waterfall_Center_23: 21300046
+      Waterfall_Center_9: 21300018
+      Waterfall_Center_10: 21300020
+      Waterfall_Center_7: 21300014
+      Waterfall_Center_17: 21300034
+      Waterfall_Center_12: 21300024
+      Waterfall_Center_25: 21300050
+      Waterfall_Center_5: 21300010
+      Waterfall_Center_26: 21300052
+      Waterfall_Center_4: 21300008
+      Waterfall_Center_27: 21300054
+      Waterfall_Center_19: 21300038
+      Waterfall_Center_14: 21300028
+      Waterfall_Center_21: 21300042
+      Waterfall_Center_3: 21300006
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

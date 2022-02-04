@@ -138,7 +138,7 @@ TextureImporter:
       213: 21300088
     second: Moss_Giant_Idle_44
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -158,6 +158,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -166,9 +168,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -189,9 +191,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1199,6 +1205,52 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Moss_Giant_Idle_18: 21300036
+      Moss_Giant_Idle_43: 21300086
+      Moss_Giant_Idle_44: 21300088
+      Moss_Giant_Idle_8: 21300016
+      Moss_Giant_Idle_13: 21300026
+      Moss_Giant_Idle_36: 21300072
+      Moss_Giant_Idle_41: 21300082
+      Moss_Giant_Idle_30: 21300060
+      Moss_Giant_Idle_2: 21300004
+      Moss_Giant_Idle_39: 21300078
+      Moss_Giant_Idle_29: 21300058
+      Moss_Giant_Idle_3: 21300006
+      Moss_Giant_Idle_0: 21300000
+      Moss_Giant_Idle_11: 21300022
+      Moss_Giant_Idle_19: 21300038
+      Moss_Giant_Idle_26: 21300052
+      Moss_Giant_Idle_38: 21300076
+      Moss_Giant_Idle_21: 21300042
+      Moss_Giant_Idle_15: 21300030
+      Moss_Giant_Idle_9: 21300018
+      Moss_Giant_Idle_31: 21300062
+      Moss_Giant_Idle_22: 21300044
+      Moss_Giant_Idle_42: 21300084
+      Moss_Giant_Idle_27: 21300054
+      Moss_Giant_Idle_7: 21300014
+      Moss_Giant_Idle_34: 21300068
+      Moss_Giant_Idle_33: 21300066
+      Moss_Giant_Idle_6: 21300012
+      Moss_Giant_Idle_25: 21300050
+      Moss_Giant_Idle_17: 21300034
+      Moss_Giant_Idle_24: 21300048
+      Moss_Giant_Idle_14: 21300028
+      Moss_Giant_Idle_1: 21300002
+      Moss_Giant_Idle_4: 21300008
+      Moss_Giant_Idle_5: 21300010
+      Moss_Giant_Idle_37: 21300074
+      Moss_Giant_Idle_23: 21300046
+      Moss_Giant_Idle_40: 21300080
+      Moss_Giant_Idle_10: 21300020
+      Moss_Giant_Idle_12: 21300024
+      Moss_Giant_Idle_16: 21300032
+      Moss_Giant_Idle_28: 21300056
+      Moss_Giant_Idle_32: 21300064
+      Moss_Giant_Idle_20: 21300040
+      Moss_Giant_Idle_35: 21300070
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

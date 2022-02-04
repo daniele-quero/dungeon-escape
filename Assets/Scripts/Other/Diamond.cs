@@ -5,9 +5,9 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class Diamond : MonoBehaviour
 {
-    private int value;
+    [SerializeField] private int _value;
     [SerializeField] private AudioSource _sound;
-    public int Value { get => value; set => this.value = value; }
+    public int Value { get => _value; set => this._value = value; }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -16,9 +16,11 @@ public class Diamond : MonoBehaviour
             PlayerInventory invt = null;
             if (collision.TryGetComponent<PlayerInventory>(out invt))
             {
-                invt.AddDiamonds(value);
+                invt.AddDiamonds(_value);
                 if (_sound != null)
                     _sound.Play();
+
+                Destroy(this.gameObject);
             }
         }
     }

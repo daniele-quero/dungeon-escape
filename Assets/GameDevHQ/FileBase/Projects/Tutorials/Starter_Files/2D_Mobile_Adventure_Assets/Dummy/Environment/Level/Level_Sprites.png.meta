@@ -69,7 +69,7 @@ TextureImporter:
       213: 21300042
     second: Level_Sprites_21
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -89,6 +89,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -97,9 +99,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -120,9 +122,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -647,6 +653,29 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Level_Sprites_10: 21300020
+      Level_Sprites_13: 21300026
+      Level_Sprites_16: 21300032
+      Level_Sprites_20: 21300040
+      Level_Sprites_0: 21300000
+      Level_Sprites_6: 21300012
+      Level_Sprites_7: 21300014
+      Level_Sprites_14: 21300028
+      Level_Sprites_5: 21300010
+      Level_Sprites_17: 21300034
+      Level_Sprites_18: 21300036
+      Level_Sprites_11: 21300022
+      Level_Sprites_15: 21300030
+      Level_Sprites_21: 21300042
+      Level_Sprites_12: 21300024
+      Level_Sprites_4: 21300008
+      Level_Sprites_2: 21300004
+      Level_Sprites_9: 21300018
+      Level_Sprites_3: 21300006
+      Level_Sprites_8: 21300016
+      Level_Sprites_19: 21300038
+      Level_Sprites_1: 21300002
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -27,6 +27,9 @@ public abstract class Enemy : MonoBehaviour
     private WaitForSeconds _walkCheckWait;
     #endregion
 
+    [SerializeField] private GameObject _diamondPrefab;
+    [SerializeField] private int _diamondValue;
+
     #region Properties
     public float Speed { get => _speed; set => _speed = value; }
     public float OriginalSpeed { get; set; }
@@ -72,6 +75,10 @@ public abstract class Enemy : MonoBehaviour
 
     public void DropDiamonds()
     {
-        //todo: drop diamond or diamonds
+        if (_diamondValue > 0)
+        {
+            GameObject diamond = Instantiate(_diamondPrefab, transform.position, Quaternion.identity, null);
+            diamond.GetComponent<Diamond>().Value = _diamondValue;
+        }
     }
 }

@@ -144,7 +144,7 @@ TextureImporter:
       213: 21300092
     second: Skeleton_Death_46
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -164,6 +164,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -172,9 +174,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -195,9 +197,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1247,6 +1253,54 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Skeleton_Death_4: 21300008
+      Skeleton_Death_23: 21300046
+      Skeleton_Death_25: 21300050
+      Skeleton_Death_32: 21300064
+      Skeleton_Death_39: 21300078
+      Skeleton_Death_45: 21300090
+      Skeleton_Death_36: 21300072
+      Skeleton_Death_41: 21300082
+      Skeleton_Death_44: 21300088
+      Skeleton_Death_2: 21300004
+      Skeleton_Death_29: 21300058
+      Skeleton_Death_19: 21300038
+      Skeleton_Death_31: 21300062
+      Skeleton_Death_42: 21300084
+      Skeleton_Death_46: 21300092
+      Skeleton_Death_15: 21300030
+      Skeleton_Death_17: 21300034
+      Skeleton_Death_21: 21300042
+      Skeleton_Death_20: 21300040
+      Skeleton_Death_9: 21300018
+      Skeleton_Death_13: 21300026
+      Skeleton_Death_5: 21300010
+      Skeleton_Death_8: 21300016
+      Skeleton_Death_14: 21300028
+      Skeleton_Death_38: 21300076
+      Skeleton_Death_33: 21300066
+      Skeleton_Death_1: 21300002
+      Skeleton_Death_11: 21300022
+      Skeleton_Death_12: 21300024
+      Skeleton_Death_3: 21300006
+      Skeleton_Death_28: 21300056
+      Skeleton_Death_34: 21300068
+      Skeleton_Death_27: 21300054
+      Skeleton_Death_16: 21300032
+      Skeleton_Death_40: 21300080
+      Skeleton_Death_0: 21300000
+      Skeleton_Death_6: 21300012
+      Skeleton_Death_24: 21300048
+      Skeleton_Death_10: 21300020
+      Skeleton_Death_26: 21300052
+      Skeleton_Death_30: 21300060
+      Skeleton_Death_18: 21300036
+      Skeleton_Death_22: 21300044
+      Skeleton_Death_7: 21300014
+      Skeleton_Death_43: 21300086
+      Skeleton_Death_35: 21300070
+      Skeleton_Death_37: 21300074
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

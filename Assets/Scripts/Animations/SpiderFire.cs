@@ -15,10 +15,11 @@ public class SpiderFire : MonoBehaviour
 
     public void ShootAcid()
     {
-        Transform t = _spider.transform.childCount > 3 ? _spider.transform.GetChild(3) : null;
+        Transform t = _spider.transform.childCount > 4 ? _spider.transform.GetChild(4) : null;
         if (t != null)
         {
             _spider.shotDone = false;
+            StartCoroutine(ShotDoneBackup());
             var s = t.GetComponent<AcidShot>();
             s.InitShot();
             s.Fired = true;

@@ -108,7 +108,7 @@ TextureImporter:
       213: 21300068
     second: Fire_Swing_34
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -128,6 +128,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -136,9 +138,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -159,9 +161,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -959,6 +965,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Fire_Swing_28: 21300056
+      Fire_Swing_21: 21300042
+      Fire_Swing_29: 21300058
+      Fire_Swing_3: 21300006
+      Fire_Swing_12: 21300024
+      Fire_Swing_1: 21300002
+      Fire_Swing_11: 21300022
+      Fire_Swing_27: 21300054
+      Fire_Swing_22: 21300044
+      Fire_Swing_34: 21300068
+      Fire_Swing_26: 21300052
+      Fire_Swing_33: 21300066
+      Fire_Swing_2: 21300004
+      Fire_Swing_23: 21300046
+      Fire_Swing_4: 21300008
+      Fire_Swing_9: 21300018
+      Fire_Swing_7: 21300014
+      Fire_Swing_15: 21300030
+      Fire_Swing_24: 21300048
+      Fire_Swing_0: 21300000
+      Fire_Swing_19: 21300038
+      Fire_Swing_8: 21300016
+      Fire_Swing_6: 21300012
+      Fire_Swing_18: 21300036
+      Fire_Swing_20: 21300040
+      Fire_Swing_25: 21300050
+      Fire_Swing_10: 21300020
+      Fire_Swing_17: 21300034
+      Fire_Swing_16: 21300032
+      Fire_Swing_30: 21300060
+      Fire_Swing_14: 21300028
+      Fire_Swing_32: 21300064
+      Fire_Swing_5: 21300010
+      Fire_Swing_13: 21300026
+      Fire_Swing_31: 21300062
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

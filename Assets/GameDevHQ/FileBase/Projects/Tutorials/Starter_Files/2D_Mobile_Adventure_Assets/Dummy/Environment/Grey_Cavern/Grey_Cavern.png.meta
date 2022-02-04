@@ -180,7 +180,7 @@ TextureImporter:
       213: 21300116
     second: Grey_Cavern_58
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -200,6 +200,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -208,9 +210,9 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
-    aniso: -1
-    mipBias: -100
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -231,9 +233,13 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1535,6 +1541,66 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Grey_Cavern_6: 21300012
+      Grey_Cavern_29: 21300058
+      Grey_Cavern_8: 21300016
+      Grey_Cavern_7: 21300014
+      Grey_Cavern_15: 21300030
+      Grey_Cavern_53: 21300106
+      Grey_Cavern_0: 21300000
+      Grey_Cavern_1: 21300002
+      Grey_Cavern_33: 21300066
+      Grey_Cavern_27: 21300054
+      Grey_Cavern_44: 21300088
+      Grey_Cavern_35: 21300070
+      Grey_Cavern_54: 21300108
+      Grey_Cavern_52: 21300104
+      Grey_Cavern_9: 21300018
+      Grey_Cavern_31: 21300062
+      Grey_Cavern_26: 21300052
+      Grey_Cavern_18: 21300036
+      Grey_Cavern_11: 21300022
+      Grey_Cavern_34: 21300068
+      Grey_Cavern_25: 21300050
+      Grey_Cavern_38: 21300076
+      Grey_Cavern_30: 21300060
+      Grey_Cavern_3: 21300006
+      Grey_Cavern_57: 21300114
+      Grey_Cavern_46: 21300092
+      Grey_Cavern_51: 21300102
+      Grey_Cavern_21: 21300042
+      Grey_Cavern_49: 21300098
+      Grey_Cavern_19: 21300038
+      Grey_Cavern_24: 21300048
+      Grey_Cavern_58: 21300116
+      Grey_Cavern_22: 21300044
+      Grey_Cavern_39: 21300078
+      Grey_Cavern_42: 21300084
+      Grey_Cavern_5: 21300010
+      Grey_Cavern_45: 21300090
+      Grey_Cavern_32: 21300064
+      Grey_Cavern_50: 21300100
+      Grey_Cavern_13: 21300026
+      Grey_Cavern_4: 21300008
+      Grey_Cavern_55: 21300110
+      Grey_Cavern_40: 21300080
+      Grey_Cavern_47: 21300094
+      Grey_Cavern_10: 21300020
+      Grey_Cavern_36: 21300072
+      Grey_Cavern_48: 21300096
+      Grey_Cavern_16: 21300032
+      Grey_Cavern_12: 21300024
+      Grey_Cavern_56: 21300112
+      Grey_Cavern_2: 21300004
+      Grey_Cavern_14: 21300028
+      Grey_Cavern_17: 21300034
+      Grey_Cavern_43: 21300086
+      Grey_Cavern_23: 21300046
+      Grey_Cavern_28: 21300056
+      Grey_Cavern_37: 21300074
+      Grey_Cavern_20: 21300040
+      Grey_Cavern_41: 21300082
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
